@@ -1,0 +1,11 @@
+setup.py
+unrelated.py
+unrelated2.py
+example_pkg_Razbi.egg-info/
+RazbiUtils.egg-info/
+RazbiUtils/__pycache__/
+info/
+.idea
+build/
+dist/
+object_to_detect.png
