@@ -38,6 +38,13 @@ class InputController:
         pyautogui.moveTo(coordinates)
 
     @classmethod
-    def press(cls, key_to_press):
-        cls.keyboard.press(key_to_press)
+    def press(cls, key_to_press, frame_rate=60):
+        with cls.keyboard.pressed(key_to_press):
+            time.sleep(1/frame_rate)
+
+
+if __name__ == '__main__':
+    # InputController.click()
+    pass
+
 
