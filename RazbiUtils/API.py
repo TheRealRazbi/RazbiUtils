@@ -7,10 +7,10 @@ import win32gui
 from .ScreenManager import ScreenManager, Screen
 
 
-class ScreenScrapper:
+class ScreenScraper:
     def __init__(self, starting_path="", templates_path=""):
         """
-The main object used for screen scrapping.
+The main object used for screen scraping.
 The path to search for files is starting_path/templates_path/img"""
         self.path = {"starting_path": starting_path,
                      'templates_path': templates_path}
@@ -134,7 +134,7 @@ The path to search for files is starting_path/templates_path/img"""
 
 if __name__ == '__main__':
     # time.sleep(2)
-    sc = ScreenScrapper()
+    sc = Screenscraper()
     sm = ScreenManager()
     path_to_template = "thing"  # any
     for screen in sm:

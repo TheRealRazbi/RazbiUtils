@@ -1,6 +1,6 @@
 # RazbiUtils
 
-This package is a wrapper around  win32api, pyautogui and pynput intended for ScreenScrapping.
+This package is a wrapper around  win32api, pyautogui and pynput intended for ScreenScraping.
 
 `pip install RazbiUtils`
 
@@ -22,9 +22,9 @@ The third issue I attempt to solve is to make it work for multiple monitors and 
 
 ### Basic template detection
 ```python
-from RazbiUtils import ScreenScrapper
+from RazbiUtils import ScreenScraper
 
-sc = ScreenScrapper()
+sc = ScreenScraper()
 
 path_to_template = 'object_to_detect'
 if sc.find_on_screen_bool(path_to_template):
@@ -37,9 +37,9 @@ Assuming that you have a path to an actual **.png** that it's on the main screen
 Ok, but let's make a little more interesting: let's make it click on the found object:
 
 ```python
-from RazbiUtils import ScreenScrapper, InputController
+from RazbiUtils import ScreenScraper, InputController
 
-sc = ScreenScrapper()
+sc = ScreenScraper()
 
 path_to_template = 'object_to_detect'
 found = sc.find_on_screen(path_to_template)
@@ -55,9 +55,9 @@ Also note that you if you don't use sc.center(), you'll use only the top-left of
 ### Multi-monitor support:
 Let's say you want to screenshot something visible on your second monitor, pyautogui is normally unable to do this, but with RazbiUtils you just do:
 ```python
-from RazbiUtils import ScreenScrapper, ScreenManager
+from RazbiUtils import ScreenScraper, ScreenManager
 
-sc = ScreenScrapper()
+sc = ScreenScraper()
 
 path_to_template = 'object_to_detect'
 if sc.find_on_screen_bool(path_to_template, ScreenManager.screens[1]):
@@ -82,4 +82,4 @@ That means the delay between clicks is 1/60 which is 0.016, which will guarantee
 For some reason the pyautogui clicks don't work on most games, so feel free to use this library or `pynput` for clicks
 
 ### Support
-If you have any suggestions, please make a pull request, so far I added only features I use really often for ScreenScrapping, but I'm sure I haven't covered everything that's being used by everyone.
+If you have any suggestions, please make a pull request, so far I added only features I use really often for ScreenScraping, but I'm sure I haven't covered everything that's being used by everyone.
