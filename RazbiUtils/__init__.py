@@ -1,4 +1,10 @@
-from .API import ScreenScraper
-from .ScreenManager import ScreenManager
-from .InputController import InputController
-from .screen_grabber import grab_screen
+from importlib.metadata import PackageNotFoundError, version
+
+from . import deprecated
+
+try:
+    __version__ = version("stage-click")
+except PackageNotFoundError:
+    __version__ = "unknown"
+
+__all__ = ["deprecated", "__version__"]
