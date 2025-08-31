@@ -1,6 +1,6 @@
 [project]
 name = "RazbiUtils"
-version = "0.1.0.a1"
+version = "0.1.0"
 description = "A bunch of miscellaneous utils for scripts/RPA"
 readme = "README.md"
 requires-python = ">=3.8"
