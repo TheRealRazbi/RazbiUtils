@@ -9,7 +9,7 @@ from importlib.metadata import PackageNotFoundError, version
 from . import core
 
 try:
-    __version__ = version("razbi-utils")
+    __version__ = version("RazbiUtils")
 except PackageNotFoundError:
     __version__ = "unknown"
 
