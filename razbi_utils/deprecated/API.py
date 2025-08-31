@@ -1,3 +1,9 @@
+# Author: TheRealRazbi (https://github.com/TheRealRazbi)
+# License: MPL-2.0
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at https://mozilla.org/MPL/2.0/.
+
 import pyautogui
 from .screen_grabber import grab_screen
 import cv2
@@ -22,7 +28,7 @@ The path to search for files is starting_path/templates_path/img"""
     @staticmethod
     def screenshot(region=None, show=False, color='gray'):
         """
-        To call bare-bones screenshot use 'from RazbiUtils import grab_screen'
+        To call bare-bones screenshot use 'from razbi_utils import grab_screen'
         :param region: tuple | if not provided, it will use the full screen of the main screen
         :param show: bool | true if you want to see how the screenshot looks like it makes it, it also blocks the program while doing so
         :param color: str | colors are RGB, BGR and GRAY

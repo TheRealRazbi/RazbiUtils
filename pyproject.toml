@@ -1,0 +1,17 @@
+[project]
+name = "razbi_utils"
+version = "0.1.0.dev1"
+description = "A bunch of miscellaneous utils for scripts/RPA"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MPL-2.0"}
+
+authors = [
+    { name = "TheRealRazbi", email = "therealrazbi@users.noreply.github.com" }
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",
+    "Operating System :: OS Independent",
+]
