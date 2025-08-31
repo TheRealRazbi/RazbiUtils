@@ -1,5 +1,7 @@
 # RazbiUtils
 
+# Description Outdated (update WIP)
+
 This package is a wrapper around  win32api, pyautogui and pynput intended for ScreenScraping.
 
 `pip install RazbiUtils`
