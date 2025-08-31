@@ -6,7 +6,6 @@
 
 from importlib.metadata import PackageNotFoundError, version
 
-from . import deprecated
 from . import core
 
 try:
@@ -14,4 +13,4 @@ try:
 except PackageNotFoundError:
     __version__ = "unknown"
 
-__all__ = ["deprecated", "core", "__version__"]
+__all__ = ["core", "__version__"]

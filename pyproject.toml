@@ -1,5 +1,5 @@
 [project]
-name = "razbi_utils"
+name = "RazbiUtils"
 version = "0.1.0.dev1"
 description = "A bunch of miscellaneous utils for scripts/RPA"
 readme = "README.md"
