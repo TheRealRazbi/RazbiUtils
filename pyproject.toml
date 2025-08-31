@@ -1,10 +1,10 @@
 [project]
 name = "RazbiUtils"
-version = "0.1.0.dev1"
+version = "0.1.0.dev2"
 description = "A bunch of miscellaneous utils for scripts/RPA"
 readme = "README.md"
 requires-python = ">=3.8"
-license = {text = "MPL-2.0"}
+license = { text = "MPL-2.0" }
 
 authors = [
     { name = "TheRealRazbi", email = "therealrazbi@users.noreply.github.com" }
@@ -15,3 +15,11 @@ classifiers = [
     "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",
     "Operating System :: OS Independent",
 ]
+
+dependencies = [
+    "pywin32>=306,<400",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/TheRealRazbi/RazbiUtils"
+"Bug Tracker" = "https://github.com/TheRealRazbi/RazbiUtils/issues"
